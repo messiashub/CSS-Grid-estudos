@@ -14,7 +14,9 @@ a{
     text-decoration: none;
 }
 img{
+    display: block;
     max-width: 100%;
+    border-radius: 5px;
 }
 /*GRID GERAL*/
 
@@ -50,7 +52,7 @@ img{
     font-size: 1.125em;
     background: rgba(0,0,0,.1);
     border-radius: 5px;
-    transition: 0.2s;
+    transition: 1s ease-out;
 }
 
 .header nav a:hover{
@@ -91,8 +93,14 @@ img{
 /*ANUNCIOS*/
 .anuncios{
     grid-area: anuncios;
+    background: #fafbfc;
+    display: grid;
+    align-content: flex-start;
+    padding: 30px;
+    grid-gap:30px
 }
 /*FOOTER*/
 .footer{
     grid-area: footer;
+    
 }
