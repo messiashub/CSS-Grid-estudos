@@ -88,6 +88,22 @@ img{
 /*CONTENT*/
 .content{
     grid-area: content;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px;
+    display: grid;          /*Chamando o grid*/
+    grid-template-columns: 1fr 1fr; /*Criando duas colunas*/
+    gap: 30px;
+}
+.col-wide{
+    grid-column: 1/-1;
+}
+.img1{
+    grid-row: span 2; /*span : ocupe 2 linhas*/
+    align-self: flex-end;
+}
+.img2{
+    align-self: flex-end;
 }
 
 /*ANUNCIOS*/
@@ -102,5 +118,12 @@ img{
 /*FOOTER*/
 .footer{
     grid-area: footer;
+    background: linear-gradient(135deg, #8844ee, #b07dfb);
     
+}
+
+.footer p{
+    color: #fff;
+    text-align: center;
+    padding: 30px;
 }
