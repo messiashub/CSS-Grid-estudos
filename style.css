@@ -106,6 +106,74 @@ img{
     align-self: flex-end;
 }
 
+/*ESTILOS CONTENT*/
+
+p{
+    font-size: 1.2em;
+    line-height: 1.6;
+    letter-spacing: -0.005em; /*A letter-spacin gpropriedade aumenta ou diminui o espaço entre os caracteres em um texto.*/
+    color: rgba(0,0,0, .7);
+}
+
+.informacoes p + p {  /*APÓS O PRIMEIRO P APLIQUE MARGIN-TOP */
+    margin-top: 30px;
+
+}
+
+.titulo {
+    color:#b07dfb;
+    
+}
+.titulo h1{
+    font-size: 3.75em;
+    line-height: 1;
+    font-weight: 700;
+}
+
+.titulo span {
+    font-size: 0.875em;
+    font-style: italic;
+}
+
+/*CARACTERÍSTICAS*/
+
+.caracteristicas {
+    display: flex;
+    align-items: flex-start ;
+}
+
+.caracteristicas > div { /* > : SOMENTE AS DIVS DENTRO DE CARACTERISTICAS*/
+    width: 80px;
+    text-align: center;
+    background:linear-gradient(135deg, #8844ee, #b07dfb);
+    border-radius: 5px;
+    box-shadow:5px 5px 15px 0px rgba(44,44,44, 0.15);
+    position: relative;
+}
+.caracteristicas > div:first-child{ /*SOMENTE A PRIMEIRA DIV DENTRO DE CARACTERISTICAS*/
+    margin-right: 30px;
+}
+
+.caracteristicas span{
+    display: block;
+    color:#b07dfb;
+}
+
+.numero {
+    color:#b07dfb;
+    font-size: 3em;
+    line-height: 1;
+    margin: 10px auto;
+}
+
+.rotulo {
+    background: #fff;
+    border-radius: 0 0 5px 5px;
+    padding: 5px 0;
+    position: relative;
+    top: 2px;
+}
+
 /*ANUNCIOS*/
 .anuncios{
     grid-area: anuncios;
