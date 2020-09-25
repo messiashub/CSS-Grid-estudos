@@ -15,7 +15,7 @@ a{
 }
 img{
     display: block;
-    max-width: 100%;
+    width: 100%;
     border-radius: 5px;
 }
 /*GRID GERAL*/
@@ -173,6 +173,11 @@ img{
     grid-template-columns: 1fr 1fr; /*Criando duas colunas*/
     gap: 30px;
 }
+@media (max-width:600px){
+    .content{
+        grid-template-columns: auto;
+    }
+}
 .col-wide{
     grid-column: 1 /-1;
 }
@@ -295,7 +300,10 @@ p{
     display: grid;
     align-content: flex-start;
     padding: 30px;
-    grid-gap:30px
+    grid-gap:30px;
+    grid-template-columns: repeat(auto-fit,
+    minmax(150px, 1fr));
+
 }
 /*FOOTER*/
 .footer{
